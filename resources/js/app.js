@@ -4,6 +4,7 @@ import Form from './core/Form';
 
 window.axios = axios;
 window.Form = Form;
+Vue.component('count', require('./Count.vue'));
 
 new Vue({
     el: '#app',
@@ -20,5 +21,6 @@ new Vue({
             this.form.post('/projects');
         }
     }
-
 });
+
+// 
